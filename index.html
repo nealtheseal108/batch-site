@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>BatCH · UNC Ultimate</title>
+<meta name="description" content="BatCH is UNC Chapel Hill's second men's ultimate team: a competitive roster with eleven seasons in the USA Ultimate college series and a full fall and spring tournament schedule.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cellipse cx='16' cy='16' rx='14' ry='9' fill='%2313294B'/%3E%3Cellipse cx='16' cy='14' rx='9' ry='4' fill='%237BAFD4'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700;800;900&family=Bitter:ital,wght@1,700;1,800&family=Saira+Extra+Condensed:wght@700;800&family=Barlow:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+<!-- one dogwood (NC state flower) drawing, reused for the header flower and the corner flowers -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <g id="petal">
+      <path d="M0,-10 C-34,-24 -58,-72 -38,-96 C-26,-109 -10,-104 -5,-95 L0,-87 L5,-95 C10,-104 26,-109 38,-96 C58,-72 34,-24 0,-10 Z"/>
+      <path class="vein" d="M0,-18 C-3,-44 -4,-64 -1,-84 M-9,-22 C-22,-44 -28,-64 -24,-86 M9,-22 C22,-44 28,-64 24,-86 M-16,-26 C-34,-44 -42,-62 -40,-80 M16,-26 C34,-44 42,-62 40,-80"/>
+      <path class="vein" d="M-9,-96 l3,9 M9,-96 l-3,9 M-3,-99 l1,7 M3,-99 l-1,7"/>
+    </g>
+    <symbol id="dogwood" viewBox="-112 -112 224 224">
+      <use href="#petal" transform="rotate(-38)"/>
+      <use href="#petal" transform="rotate(52)"/>
+      <use href="#petal" transform="rotate(142)"/>
+      <use href="#petal" transform="rotate(232)"/>
+      <circle class="eye" r="17"/>
+      <g class="dots">
+        <circle r="3.2"/><circle cx="-8" cy="-4" r="3"/><circle cx="8" cy="-4" r="3"/><circle cx="0" cy="-10" r="3"/>
+        <circle cx="-7" cy="6" r="3"/><circle cx="7" cy="6" r="3"/><circle cx="0" cy="11" r="3"/><circle cx="-11" cy="2" r="2.4"/><circle cx="11" cy="2" r="2.4"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+<div class="deco" aria-hidden="true">
+  <div class="wm"><span>UNC BatCH UNC BatCH UNC BatCH</span><span>BatCH UNC BatCH UNC BatCH UNC</span><span>UNC BatCH UNC BatCH UNC BatCH</span><span>BatCH UNC BatCH UNC BatCH UNC</span><span>UNC BatCH UNC BatCH UNC BatCH</span><span>BatCH UNC BatCH UNC BatCH UNC</span><span>UNC BatCH UNC BatCH UNC BatCH</span></div>
+  <svg class="dw dw-1"><use href="#dogwood"/></svg>
+  <svg class="dw dw-2"><use href="#dogwood"/></svg>
+  <svg class="dw dw-3"><use href="#dogwood"/></svg>
+  <svg class="dw dw-4"><use href="#dogwood"/></svg>
+  <svg class="dw dw-5"><use href="#dogwood"/></svg>
+</div>
+
+<header class="jersey">
+  <svg class="flower-hd" aria-hidden="true" focusable="false"><use href="#dogwood"/></svg>
+  <div class="top">
+    <div class="brand">
+      <p class="season">UNC Ultimate <span>2026 &ndash; 27</span></p>
+      <h1>BatCH</h1>
+      <p class="sub">UNC Chapel Hill's second men's ultimate team · eleven seasons in the USA Ultimate college series</p>
+    </div>
+    <a class="tally" href="#roster" aria-label="See the roster"><span class="tally-label">PLAYERS</span><span class="tally-num" id="rosterCount">43</span></a>
+  </div>
+</header>
+
+<!-- Like the game: everything under the header fills at least one screen, so short views scroll
+     only the header's height. The four views share this page so the music keeps playing. -->
+<div class="below">
+<nav class="tabs-nav" aria-label="Sections">
+  <a href="#home" data-view="home">Home</a>
+  <a href="#history" data-view="history">History</a>
+  <a href="#roster" data-view="roster">Roster</a>
+  <a href="#batchillion" data-view="batchillion">Batchillion</a>
+</nav>
+
+<main class="stage site">
+
+  <!-- HOME / PURPOSE -->
+  <section class="view card" id="view-home" data-view="home" aria-labelledby="homeTitle">
+    <p class="kicker">Who we are</p>
+    <h2 class="prompt" id="homeTitle">UNC's second men's team. Built to <em>compete</em>.</h2>
+    <p class="lead">BatCH is UNC Chapel Hill's second men's ultimate team and a recognized UNC student organization. It plays a full fall and spring tournament schedule across the Carolinas and the Southeast and competes every spring in the college series run by USA Ultimate, the sport's national governing body.</p>
+    <p class="aside">New to the sport? Ultimate is a fast, non-contact team game. Two teams of seven pass a disc up a field and score by catching it in the end zone. Players call their own fouls, a tradition called Spirit of the Game.</p>
+
+    <h3 class="sec">What BatCH plays for</h3>
+    <ol class="pillars">
+      <li><b>Compete.</b> BatCH plays the USA Ultimate college series every spring, from the Southern Atlantic Coast conference championships to Atlantic Coast Regionals. In spring 2026 it reached Atlantic Coast D-I Regionals, its first trip there since 2019.</li>
+      <li><b>Hold a standard.</b> Three practices a week under the lights at Hooker Fields, and fall tournament games stat-tracked point by point. The 2026 rookie class, 19 players and the largest in team history, logged points at all three fall tournaments.</li>
+      <li><b>Play for each other.</b> BatCH is team-first: winning and leading follow from how the team plays together. Leadership comes from across the roster, not only the captains, and each class hands that standard to the next.</li>
+    </ol>
+
+    <h3 class="sec">Fall 2026</h3>
+    <ul class="facts">
+      <li><span>Practice</span><div>Tuesday, Thursday and Sunday nights at Hooker Fields on UNC's campus</div></li>
+      <li><span>Tournaments</span><div>Bank Run (Sept 19&ndash;20), Bare Bones (Oct 3&ndash;4) and Fall Easterns (Oct 16&ndash;18), where BatCH played Georgia Tech, Maryland, Emory, William &amp; Mary and App State, plus a scrimmage against Duke (Nov 5)</div></li>
+      <li><span>Contact</span><div><a class="linkish" href="mailto:uncbatch@gmail.com">uncbatch@gmail.com</a></div></li>
+    </ul>
+    <p class="cta-row"><a class="btn" href="#history">Team history</a><a class="btn ghost" href="#batchillion">Play Batchillion</a></p>
+  </section>
+
+  <!-- HISTORY -->
+  <section class="view card" id="view-history" data-view="history" aria-labelledby="historyTitle">
+    <p class="kicker">History</p>
+    <h2 class="prompt" id="historyTitle">Eleven seasons on <em>USA Ultimate</em>.</h2>
+    <p class="lead">USA Ultimate's online records for BatCH start in 2014&ndash;15, when the team was listed as B-atCH. It has been BatCH ever since. Each season shows the USA Ultimate events the team entered and how many players its roster listed.</p>
+    <div class="stats" id="histStats"></div>
+    <ol class="timeline" id="timeline"></ol>
+    <p class="hint small-note">CC = conference championship. Dev = USA Ultimate's college Developmental division. D-I = Division I. Source: USA Ultimate team pages, 2014&ndash;15 to 2025&ndash;26. Seasons before 2014&ndash;15 are not on USA Ultimate's site with rosters.</p>
+  </section>
+
+  <!-- ROSTER -->
+  <section class="view card" id="view-roster" data-view="roster" aria-labelledby="rosterTitle">
+    <p class="kicker">Roster</p>
+    <h2 class="prompt" id="rosterTitle">The 2026&ndash;27 <em>team</em>.</h2>
+    <!-- ROSTER PHOTO: drop a team photo at assets/roster.jpg and it replaces the jersey artwork automatically. -->
+    <figure class="photo" id="rosterPhoto">
+      <div class="photo-art" aria-hidden="true">
+        <div class="photo-wm"><span>UNC BatCH UNC BatCH</span><span>BatCH UNC BatCH UNC</span><span>UNC BatCH UNC BatCH</span></div>
+        <svg class="photo-flower"><use href="#dogwood"/></svg>
+        <div class="photo-mark"><span class="season">UNC Ultimate <span>2026 &ndash; 27</span></span><b>BatCH</b></div>
+      </div>
+    </figure>
+    <p class="lead" id="rosterLead">Everyone on the team this season, in alphabetical order.</p>
+    <ul class="names" id="names"></ul>
+    <p class="hint small-note">Names from USA Ultimate's 2025&ndash;26 roster and this fall's game stats. A few players are listed by first name only.</p>
+  </section>
+
+  <!-- BATCHILLION -->
+  <section class="view card" id="view-batchillion" data-view="batchillion" aria-labelledby="bhTitle">
+    <p class="kicker">The daily game</p>
+    <h2 class="prompt" id="bhTitle"><em>Batchillion</em></h2>
+    <div class="mini-field" aria-hidden="true">
+      <svg viewBox="0 0 1200 300">
+        <rect x="0" y="0" width="1200" height="300" class="band-a"/>
+        <g class="mf-lines">
+          <line x1="294.5" y1="0" x2="294.5" y2="300"/><line x1="370.9" y1="0" x2="370.9" y2="300"/><line x1="447.3" y1="0" x2="447.3" y2="300"/>
+          <line x1="523.6" y1="0" x2="523.6" y2="300"/><line x1="600" y1="0" x2="600" y2="300"/><line x1="676.4" y1="0" x2="676.4" y2="300"/>
+          <line x1="752.7" y1="0" x2="752.7" y2="300"/><line x1="829.1" y1="0" x2="829.1" y2="300"/><line x1="905.5" y1="0" x2="905.5" y2="300"/>
+        </g>
+        <rect x="0" y="0" width="218.18" height="300" class="mf-own"/>
+        <rect x="981.82" y="0" width="218.18" height="300" class="mf-far"/>
+        <line class="goal" x1="218.18" y1="0" x2="218.18" y2="300"/>
+        <line class="goal" x1="981.82" y1="0" x2="981.82" y2="300"/>
+        <path class="mf-under" d="M218 170 C 420 20, 820 20, 1090 140"/>
+        <path class="mf-trail" d="M218 170 C 420 20, 820 20, 1090 140"/>
+        <circle class="mf-disc" cx="1090" cy="140" r="15"/>
+      </svg>
+    </div>
+    <p class="lead">Batchillion is BatCH's own daily game. Each prompt asks you to name a teammate, and every correct name is a throw down the field. The rarer the pick, the farther it flies: a name almost nobody else thinks of is a <b>one in a batchillion</b> and goes 100 yards, all the way into the end zone.</p>
+    <ul class="facts">
+      <li><span>Players</span><div>Seven prompts a day, the same for everyone, 40 seconds each: name a teammate who started university in a given year. Once you use someone in Players, they're gone for you for good.</div></li>
+      <li><span>Stat sheets</span><div>Rounds built from this season's game stats, like who threw an assist at Bank Run or who got a block at Bare Bones.</div></li>
+      <li><span>Leaderboard</span><div>Public, and it ranks your best single round.</div></li>
+    </ul>
+    <p class="cta-row"><a class="btn big" href="https://nealtheseal108.github.io/batchillion/">Play Batchillion</a></p>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <span><a class="linkish" href="https://nealtheseal108.github.io/batchillion/"><span class="lg">play Batchillion</span><span class="sm">play</span></a></span>
+  <div id="tunes" class="tunes" role="region" aria-label="Music player">
+    <span class="tunes-ic" aria-hidden="true"><svg viewBox="0 0 24 24" class="ic-note"><path d="M9 18.5a2.5 2.5 0 1 1-2-2.45V5.5l11-2v11a2.5 2.5 0 1 1-2-2.45V7.1l-7 1.3z"/></svg><span class="eq"><i></i><i></i><i></i></span></span>
+    <span class="tunes-now"><span class="tunes-title" id="pbTitle">Shotput (slowed + reverb)</span><span class="tunes-artist" id="pbArtist">Still Woozy</span></span>
+    <div class="tunes-ctrls">
+      <button type="button" class="tb" id="pbPrev" aria-label="Previous song"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h2v14H6zM20 5v14L9 12z"/></svg></button>
+      <button type="button" class="tb tb-play" id="pbPlay" aria-label="Play"><svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg><svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg></button>
+      <button type="button" class="tb" id="pbNext" aria-label="Next song"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 5h2v14h-2zM4 5v14l11-7z"/></svg></button>
+      <button type="button" class="tb tb-loop" id="pbLoop" aria-label="Loop this song" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v3l4-4-4-4v3H5v6h2zm10 10H7v-3l-4 4 4 4v-3h12v-6h-2z"/></svg></button>
+      <button type="button" class="tb" id="pbRank" aria-label="most played songs" title="most played songs"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16v-2H4zM5 16h3V9H5zm5.5 0h3V4h-3zM16 16h3v-5h-3z"/></svg></button>
+    </div>
+  </div>
+  <span><a class="linkish" href="https://play.usaultimate.org/teams/events/Eventteam/?TeamId=7Yj7kpsLgQbsoKb%2bDYDfPHoYuhXCzWbxrv06fRehAj4%3d"><span class="lg">USA Ultimate</span><span class="sm">USAU</span></a></span>
+</footer>
+</div>
+
+<dialog id="songs" class="dlg" aria-labelledby="songsTitle">
+  <div class="dlg-head how-head"><div><p class="kicker">BATCHILLION RADIO</p><h2 id="songsTitle" tabindex="-1" autofocus>Most played</h2></div><svg class="dlg-flower" aria-hidden="true" focusable="false"><use href="#dogwood"/></svg></div>
+  <div class="dlg-body"><p class="hint songs-note">1 listen = a minute or more of a song, from everyone listening on Batchillion and this site. Tap a song to play it.</p><div id="songsBody"></div></div>
+  <form method="dialog" class="dlg-foot"><button class="btn">close</button></form>
+</dialog>
+
+<!-- Music: the same playlist and player as Batchillion (music.js); the player sits in the footer. -->
+<div id="ythost" aria-hidden="true"></div>
+
+<script src="data.js?v=1"></script>
+<script src="site.js?v=1"></script>
+<script src="config.js?v=1"></script>
+<script src="music.js?v=1"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
+</body>
+</html>
