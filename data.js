@@ -200,9 +200,25 @@ window.SEASONS = [
 // LEADERSHIP & SPONSORS. Groups with no names are hidden on the page, so fill these in as they're confirmed.
 // President: from the 2026-27 Furthering sponsorship agreement.
 window.LEADERSHIP = {
-  coaches: [],                       // e.g. { name: "First Last", role: "Head coach" }
-  captains: [],                      // e.g. { name: "First Last", role: "Captain" }
-  officers: [{ name: "Neal Parekh", role: "President" }],
+  coaches: [
+    { name: "Mitchell O'Connor", role: "Coach" },
+    { name: "Ky Gouchoe-Hanas", role: "Coach" },
+    { name: "Brian Mateer", role: "Coach" },
+    { name: "Neil Khot", role: "Coach" },
+    { name: "Josh Krause", role: "Coach" },
+    { name: "Jon Aycock", role: "Coach" },
+  ],
+  captains: [
+    { name: "Nate Scofield", role: "Captain" },
+    { name: "Gavin Blurr", role: "Captain" },
+    { name: "Owen Evans", role: "Captain" },
+  ],
+  officers: [
+    { name: "Neal Parekh", role: "President" },
+    { name: "Oliver Spiller", role: "Vice President" },
+    { name: "Andrew Carneiro", role: "Treasurer" },
+    { name: "Bryce Jensen", role: "Advisor" },
+  ],
 };
 window.SPONSORS = [
   { name: "Furthering Leadership", url: "https://furtheringleadership.com/", blurb: "Executive coaching and leadership consulting." },
