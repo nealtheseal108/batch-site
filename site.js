@@ -26,6 +26,7 @@
   // ---- History: one row per season, newest first.
   const seasons = (window.SEASONS || []).slice().reverse();
   const real = seasons.filter((s) => !s.gap);
+  const most = Math.max(...real.map((s) => s.players));   // scales the roster-size bars
   const events = new Set(real.flatMap((s) => s.events));
   $("#histStats").innerHTML =
     `<div><b>${real.length}</b><span>seasons</span></div>` +
