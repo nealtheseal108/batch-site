@@ -425,3 +425,4 @@ a.btn { text-decoration: none; display: inline-block; }
 .sponsors a:hover { text-decoration: underline; }
 .sponsors .who { display: block; font: 800 12px/1.4 var(--num); letter-spacing: .14em; text-transform: uppercase; color: var(--carolina); margin-top: 2px; }
 .sponsors p { margin: 6px 0 0; font: 500 15px/1.45 var(--text); color: var(--carolina-tint); max-width: 60ch; }
+.sponsors .sp-name { color: var(--white); font: 800 22px/1.1 var(--display); }

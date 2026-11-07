@@ -206,4 +206,6 @@ window.LEADERSHIP = {
 };
 window.SPONSORS = [
   { name: "Furthering Leadership", url: "https://furtheringleadership.com/", blurb: "Executive coaching and leadership consulting." },
+  { name: "TechSoft", url: "", blurb: "" },
+  { name: "Khot & Associates", url: "", blurb: "Law firm in Raleigh, North Carolina." },
 ];
