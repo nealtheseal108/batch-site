@@ -11,8 +11,7 @@
   const key = (n) => { const p = n.replace(/\./g, "").split(" "); return (p.length > 1 ? p[p.length - 1] + " " + p.slice(0, -1).join(" ") : n).toLowerCase(); };
   roster.sort((a, b) => key(a).localeCompare(key(b)));
   $("#names").innerHTML = roster.map((n) => `<li>${esc(n)}</li>`).join("");
-  $("#rosterCount").textContent = roster.length;
-  $("#rosterLead").textContent = `${roster.length} players on the team this season, in alphabetical order by last name.`;
+  $("#rosterLead").textContent = "This season's team, in alphabetical order by last name.";
 
   // Roster photo: shows assets/roster.jpg when it exists; until then the jersey artwork stays.
   const img = new Image();
@@ -34,7 +33,6 @@
   // ---- History: one row per season, newest first.
   const seasons = (window.SEASONS || []).slice().reverse();
   const real = seasons.filter((s) => !s.gap);
-  const most = Math.max(...real.map((s) => s.players));   // scales the roster-size bars
   const events = new Set(real.flatMap((s) => s.events));
   $("#histStats").innerHTML =
     `<div><b>${real.length}</b><span>seasons</span></div>` +
@@ -44,7 +42,6 @@
     if (s.gap) return `<li class="season-row gap"><div class="yr">${dash(s.season)}</div><div class="sr-main"><p class="note">No USA Ultimate season listed.</p></div></li>`;
     const evs = s.events.map((e) => `<li${/Regionals/.test(e) ? ' class="reg"' : ""}>${esc(e)}</li>`).join("");
     return `<li class="season-row"><div class="yr">${dash(s.season)}<small>${esc(s.name)}</small></div><div class="sr-main">`
-      + `<div class="size"><span class="bar"><i style="width:${Math.round((s.players / most) * 100)}%"></i></span><span class="n">${s.players} players</span></div>`
       + `<ul class="evs" aria-label="events">${evs}</ul>`
       + (s.note ? `<p class="note">${esc(s.note)}</p>` : "")
       + `<a class="linkish src" href="${esc(s.url)}">USA Ultimate team page</a>`

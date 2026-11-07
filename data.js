@@ -140,7 +140,7 @@ window.SEASONS = [
       "Rodeo",
       "Southern Atlantic Coast Dev College Men's CC"
     ],
-    "note": "The biggest roster on record: 49 players."
+    "note": ""
   },
   {
     "season": "2022-23",
@@ -198,13 +198,12 @@ window.SEASONS = [
 ];
 
 // LEADERSHIP & SPONSORS. Groups with no names are hidden on the page, so fill these in as they're confirmed.
-// President: from the 2026-27 Furthering sponsorship agreement. Furthering: logo on the back of every 2026 jersey.
+// President: from the 2026-27 Furthering sponsorship agreement.
 window.LEADERSHIP = {
   coaches: [],                       // e.g. { name: "First Last", role: "Head coach" }
   captains: [],                      // e.g. { name: "First Last", role: "Captain" }
   officers: [{ name: "Neal Parekh", role: "President" }],
 };
 window.SPONSORS = [
-  { name: "Furthering Leadership", who: "Mike Hanas", url: "https://furtheringleadership.com/",
-    blurb: "Executive coaching and leadership consulting. Our 2026–27 jersey sponsor: the Furthering logo is on the back of every BatCH jersey." },
+  { name: "Furthering Leadership", url: "https://furtheringleadership.com/", blurb: "Executive coaching and leadership consulting." },
 ];
