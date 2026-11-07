@@ -196,3 +196,15 @@ window.SEASONS = [
     "note": "Back at Atlantic Coast D-I Regionals for the first time since 2019. BatCH also hosted BatCH Bash again in March 2026."
   }
 ];
+
+// LEADERSHIP & SPONSORS. Groups with no names are hidden on the page, so fill these in as they're confirmed.
+// President: from the 2026-27 Furthering sponsorship agreement. Furthering: logo on the back of every 2026 jersey.
+window.LEADERSHIP = {
+  coaches: [],                       // e.g. { name: "First Last", role: "Head coach" }
+  captains: [],                      // e.g. { name: "First Last", role: "Captain" }
+  officers: [{ name: "Neal Parekh", role: "President" }],
+};
+window.SPONSORS = [
+  { name: "Furthering Leadership", who: "Mike Hanas", url: "https://furtheringleadership.com/",
+    blurb: "Executive coaching and leadership consulting. Our 2026–27 jersey sponsor: the Furthering logo is on the back of every BatCH jersey." },
+];

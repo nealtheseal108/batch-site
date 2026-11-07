@@ -23,6 +23,14 @@
   };
   img.src = "assets/roster.jpg";
 
+  // ---- Leadership & sponsors (data.js). Empty groups stay hidden.
+  const L = window.LEADERSHIP || {}, groups = [["Coaches", L.coaches], ["Captains", L.captains], ["Officers", L.officers]].filter(([, xs]) => xs && xs.length);
+  if (groups.length) $("#leaders").innerHTML = `<h3 class="sub-h">Leadership</h3>` + groups.map(([t, xs]) =>
+    `<div class="lead-group"><p class="kicker">${esc(t)}</p><ul class="people">${xs.map((p) => `<li><b>${esc(p.name)}</b><span>${esc(p.role || "")}</span></li>`).join("")}</ul></div>`).join("");
+  const S = window.SPONSORS || [];
+  if (S.length) $("#sponsors").innerHTML = `<h3 class="sub-h">Sponsors</h3><ul class="sponsors">` + S.map((s) =>
+    `<li><a href="${esc(s.url)}" target="_blank" rel="noopener"><b>${esc(s.name)}</b></a>${s.who ? `<span class="who">${esc(s.who)}</span>` : ""}<p>${esc(s.blurb || "")}</p></li>`).join("") + `</ul>`;
+
   // ---- History: one row per season, newest first.
   const seasons = (window.SEASONS || []).slice().reverse();
   const real = seasons.filter((s) => !s.gap);

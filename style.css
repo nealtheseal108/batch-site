@@ -412,3 +412,16 @@ a.btn { text-decoration: none; display: inline-block; }
   .photo-art::after { height: 20px; background: linear-gradient(to top, var(--carolina) 0 6px, var(--white) 6px 10px, var(--carolina) 10px 13px, var(--white) 13px 17px, var(--carolina) 17px); }
   .photo-mark b { text-shadow: 2px 2px 0 var(--white); }
 }
+/* leadership & sponsors (roster view) */
+.sub-h { font: 800 22px/1.1 var(--display); color: var(--navy); margin: 26px 0 10px; }
+.lead-group { margin: 0 0 12px; }
+.people { list-style: none; padding: 0; margin: 6px 0 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 8px; }
+.people li { background: var(--white); border: 2px solid var(--navy); border-radius: 10px; padding: 10px 12px; display: grid; gap: 2px; }
+.people b { font: 700 17px/1.2 var(--text); color: var(--navy); }
+.people span { font: 800 12px/1.2 var(--num); letter-spacing: .14em; text-transform: uppercase; color: var(--graphite); }
+.sponsors { list-style: none; padding: 0; margin: 6px 0 0; display: grid; gap: 10px; }
+.sponsors li { background: var(--navy); color: var(--white); border-radius: 12px; padding: 14px 16px; box-shadow: inset 0 0 0 2px var(--navy), inset 0 0 0 4px var(--carolina); }
+.sponsors a { color: var(--white); text-decoration: none; font: 800 22px/1.1 var(--display); }
+.sponsors a:hover { text-decoration: underline; }
+.sponsors .who { display: block; font: 800 12px/1.4 var(--num); letter-spacing: .14em; text-transform: uppercase; color: var(--carolina); margin-top: 2px; }
+.sponsors p { margin: 6px 0 0; font: 500 15px/1.45 var(--text); color: var(--carolina-tint); max-width: 60ch; }
