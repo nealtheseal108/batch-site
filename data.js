@@ -208,6 +208,7 @@ window.LEADERSHIP = {
     { name: "Neal Parekh", role: "President" },
     { name: "Oliver Spiller", role: "Vice President" },
     { name: "Andrew Carneiro", role: "Treasurer" },
+    { name: "Matthew Bain", role: "Social Media Chair" },
     { name: "Bryce Jensen", role: "Advisor" },
   ],
 };
