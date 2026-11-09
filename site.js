@@ -36,8 +36,8 @@
   const events = new Set(real.flatMap((s) => s.events));
   $("#histStats").innerHTML =
     `<div><b>${real.length}</b><span>seasons</span></div>` +
-    `<div><b>${events.size}</b><span>events</span></div>` +
-    `<div><b>#12</b><span>best finish in the Atlantic Coast region · #99 of 408 nationally</span></div>`;
+    `<div><b>${events.size}</b><span>ranked tournaments</span></div>` +
+    `<div><b>#99</b><span>of 408 nationally</span></div>`;
   $("#timeline").innerHTML = seasons.map((s) => {
     if (s.gap) return `<li class="season-row gap"><div class="yr">${dash(s.season)}</div><div class="sr-main"><p class="note">No USA Ultimate season listed.</p></div></li>`;
     const evs = s.events.map((e) => `<li${/Regionals/.test(e) ? ' class="reg"' : ""}>${esc(e)}</li>`).join("");
