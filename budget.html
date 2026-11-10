@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BatCH Fall Budget</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700;800&family=Saira+Extra+Condensed:wght@700;800&family=Barlow:wght@400;600;700&display=swap">
+<style>
+:root{--ground:#F5F5F5;--white:#FFF;--navy:#13294B;--carolina:#7BAFD4;--tint:#DDEBF6;--graphite:#45566E;--line:#D5DCE6;--over:#A3262A;--over-tint:#F8E3E3;--ok:#1F6B45;
+--display:"Roboto Slab",Rockwell,Georgia,serif;--num:"Saira Extra Condensed","Arial Narrow",sans-serif;--text:"Barlow","Avenir Next",system-ui,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--navy);font:400 16px/1.5 var(--text);padding:0 16px}
+main{max-width:760px;margin:0 auto;padding-block:32px 48px;display:grid;gap:28px}
+header{border-bottom:12px solid transparent;border-image:linear-gradient(var(--navy) 0 4px,transparent 4px 8px,var(--navy) 8px 12px) 1;padding-bottom:16px}
+h1{font:800 clamp(28px,6vw,40px)/1.1 var(--display);margin:0 0 6px;text-wrap:balance}
+h2{font:700 20px/1.2 var(--display);margin:0 0 10px}
+.sub{color:var(--graphite);margin:0}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.tile{background:var(--white);border:2px solid var(--navy);border-radius:10px;padding:14px 16px}
+.tile b{display:block;font:800 34px/1 var(--num);font-variant-numeric:tabular-nums;letter-spacing:.01em}
+.tile span{font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--graphite)}
+.tile.over{border-color:var(--over);background:var(--over-tint)} .tile.over b{color:var(--over)}
+.bar{height:22px;border-radius:11px;background:var(--tint);overflow:hidden;display:flex;border:2px solid var(--navy)}
+.bar i{display:block;height:100%}
+.legend{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:14px;color:var(--graphite);margin-top:8px}
+.legend em{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px;font-style:normal}
+.wrap{overflow-x:auto;background:var(--white);border:1px solid var(--line);border-radius:10px}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+th,td{padding:9px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--graphite);font-weight:700}
+td.amt,th.amt{text-align:right;white-space:nowrap}
+tr.total td{font-weight:700;border-bottom:0;border-top:2px solid var(--navy)}
+.note{font-size:14px;color:var(--graphite);margin:8px 0 0}
+footer{font-size:13px;color:var(--graphite)}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <h1>BatCH fall 2026 budget</h1>
+  <p class="sub">Updated Nov 10, 2026 from the team's bank activity. UNC Sport Club reimburses up to <strong>$3,250</strong> for the fall; anything above that comes out of dues.</p>
+</header>
+
+<section class="tiles" aria-label="Summary">
+  <div class="tile"><span>Fall allowance</span><b>$3,250.00</b></div>
+  <div class="tile"><span>Spent so far</span><b>$3,498.23</b></div>
+  <div class="tile over"><span>Over allowance</span><b>$248.23</b></div>
+  <div class="tile over"><span>Over after Davidson (est.)</span><b>$753–803</b></div>
+</section>
+
+<section>
+  <h2>Where the money went</h2>
+  <div class="bar" role="img" aria-label="Bid fees $1,100, lodging $2,398.23, out of $3,498.23 spent">
+    <i style="width:31.4%;background:var(--navy)"></i><i style="width:68.6%;background:var(--carolina)"></i>
+  </div>
+  <div class="legend"><span><em style="background:var(--navy)"></em>Bid fees $1,100.00</span><span><em style="background:var(--carolina)"></em>Lodging $2,398.23</span></div>
+</section>
+
+<section>
+  <h2>Spent this fall</h2>
+  <div class="wrap"><table>
+    <thead><tr><th>Date</th><th>Tournament</th><th>What</th><th class="amt">Amount</th></tr></thead>
+    <tbody>
+      <tr><td>Aug 31</td><td>Bank Run, Charlotte</td><td>Bid fee</td><td class="amt">$300.00</td></tr>
+      <tr><td>Sep 17</td><td>Bank Run, Charlotte</td><td>Hotels</td><td class="amt">$625.13</td></tr>
+      <tr><td>Sep 29</td><td>Fall Easterns, Wilmington</td><td>Bid fee</td><td class="amt">$450.00</td></tr>
+      <tr><td>Oct 1</td><td>Bare Bones, Charlotte</td><td>Bid fee</td><td class="amt">$350.00</td></tr>
+      <tr><td>Oct 3</td><td>Bare Bones, Charlotte</td><td>Hotel, 3 rooms (paid by a player, owed back)</td><td class="amt">$332.35</td></tr>
+      <tr><td>Oct 14</td><td>Fall Easterns, Wilmington</td><td>Airbnb</td><td class="amt">$1,440.75</td></tr>
+      <tr class="total"><td colspan="3">Total spent</td><td class="amt">$3,498.23</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">Not counted: the $450 Brickyard Brawl bid fee (paid Aug 26). The event was cancelled and a refund was requested.</p>
+</section>
+
+<section>
+  <h2>Still to pay</h2>
+  <div class="wrap"><table>
+    <thead><tr><th>Tournament</th><th>What</th><th class="amt">Amount</th></tr></thead>
+    <tbody>
+      <tr><td>DUFF's Hucksgiving, Davidson (Nov 14–15)</td><td>Bid fee</td><td class="amt">$215.00</td></tr>
+      <tr><td>DUFF's Hucksgiving, Davidson (Nov 14–15)</td><td>Lodging, 1 night (estimate)</td><td class="amt">$290–340</td></tr>
+      <tr class="total"><td colspan="2">Fall total once paid</td><td class="amt">$4,003–4,053</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">Lodging is an estimate until it is booked: about 4 hotel rooms near Davidson, or an Airbnb for the group.</p>
+</section>
+
+<section>
+  <h2>Money in this fall</h2>
+  <p class="note" style="margin:0">Dues and Venmo transfers into the team account since September: <strong>$2,986.22</strong>. The UNC reimbursement (up to $3,250) arrives after receipts are filed.</p>
+</section>
+
+<footer>Totals only. Receipts and the full ledger are with the team officers.</footer>
+</main>
+</body>
+</html>
