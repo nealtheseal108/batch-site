@@ -198,6 +198,7 @@ window.LEADERSHIP = {
     { name: "Neil Khot", role: "Coach" },
     { name: "Josh Krause", role: "Coach" },
     { name: "Jon Aycock", role: "Coach" },
+    { name: "Ian Stone", role: "Coach" },
   ],
   captains: [
     { name: "Nate Scofield", role: "Captain" },
